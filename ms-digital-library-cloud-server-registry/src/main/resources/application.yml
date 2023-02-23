@@ -1,0 +1,4 @@
+spring:
+  application:
+    name: ms-digital-library-cloud-server-registry
+#URL: http://localhost:8889/

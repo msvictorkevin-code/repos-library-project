@@ -1,0 +1,32 @@
+[
+  {
+    "_id": {
+      "$oid": "62c998c712d90e1fefb93ce1"
+    },
+    "idReader": 1,
+    "username": "juanperez",
+    "readerName": "Juan Perez",
+    "addressReader": "Av. Larco 880",
+    "userProfileId": 1
+  },
+  {
+    "_id": {
+      "$oid": "62c998db12d90e1fefb93ce2"
+    },
+    "idReader": 2,
+    "username": "victor-matos",
+    "readerName": "Victor Matos",
+    "addressReader": "Av. Larco 880",
+    "userProfileId": 2
+  },
+  {
+    "_id": {
+      "$oid": "62c99b6912d90e1fefb93ce4"
+    },
+    "idReader": 3,
+    "username": "donki",
+    "readerName": "Donki",
+    "addressReader": "Av. Larco 880",
+    "userProfileId": 3
+  }
+]

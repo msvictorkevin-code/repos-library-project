@@ -1,0 +1,54 @@
+spring:
+  application:
+    name: ms-digital-library-loan-book
+ 
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: MICROJAVA220822
+    password: 123456
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+       
+server:
+  port: 8081
+    
+
+# Registry Client
+
+eureka:
+   client:
+      fetch-registry: true
+      serviceUrl:
+         defaultZone: http://localhost:8889/eureka
+
+# Actuator
+# management:
+#   endpoints:
+#     web:
+#       exposure:
+#         include: "*"
+
+#Metrics related configurations
+management:
+  endpoint:
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
+    gateway:
+      enabled: true   
+  endpoints:
+      web:
+        exposure:
+          include: "*"
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+
+keycloak:
+  realm: realm-proyecto
+  auth-server-url: http://localhost:8080/
+  resource: springboot-keycloak.
+  use-resource-role-mappings: false
+  public-client: true
+  bearer-only: true

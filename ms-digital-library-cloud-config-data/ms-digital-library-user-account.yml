@@ -1,0 +1,48 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  metrics:
+    export:
+      prometheus:
+        enabled: 'true'
+  endpoint:
+    metrics:
+      enabled: 'true'
+    prometheus:
+      enabled: 'true'
+    gateway:
+      enabled: 'true '
+spring:
+  jpa:
+    generate-ddl: 'true'
+  datasource:
+    jpa:
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+          format_sql: 'true'
+      jdbc:
+        lob:
+          non_contextual_creation: 'true'
+      hibernate:
+        ddl-auto: none
+      show-sql: 'true'
+    password: postgres
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/MICROJAVA220822_DIGITALLIBRARYDB
+  sql:
+    init:
+      mode: always
+sring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+#eureka:
+#  client:
+#    fetch-registry: 'true'
+#    serviceUrl:
+#      defaultZone: http://localhost:8889/eureka
+server:
+  port: '8081'

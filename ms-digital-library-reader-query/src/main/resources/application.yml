@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: ms-digital-library-reader-query
